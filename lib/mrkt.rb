@@ -12,6 +12,7 @@ require 'mrkt/concerns/import_leads'
 require 'mrkt/concerns/import_custom_objects'
 require 'mrkt/concerns/crud_custom_objects'
 require 'mrkt/concerns/crud_custom_activities'
+require 'mrkt/concerns/crud_emails'
 require 'mrkt/concerns/crud_programs'
 require 'mrkt/concerns/crud_asset_static_lists'
 require 'mrkt/concerns/crud_asset_folders'
@@ -29,6 +30,7 @@ module Mrkt
     include ImportCustomObjects
     include CrudCustomObjects
     include CrudCustomActivities
+    include CrudEmails
     include CrudPrograms
     include CrudAssetStaticLists
     include CrudAssetFolders
